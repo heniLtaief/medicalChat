@@ -30,8 +30,8 @@ const ChannelListContainer = () => {
     return (
         <>
             <SideBar/>
-            <div >
-
+            <div className='channel-list__list__wrapper'>
+                <CompanyHeader/>
             </div>
         </>
     )
