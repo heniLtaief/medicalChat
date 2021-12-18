@@ -20,11 +20,20 @@ const SideBar = ()=>(
         </div>
     </div>
 )
+
+const CompanyHeader = ()=>(
+    <div className='channel-list__header'>
+        <p className='channel-list__header__text'>Medical Pager</p>
+    </div>
+)
 const ChannelListContainer = () => {
     return (
-        <div>
-            ChannelListContainer
-        </div>
+        <>
+            <SideBar/>
+            <div >
+
+            </div>
+        </>
     )
 }
 
