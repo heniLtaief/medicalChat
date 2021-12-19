@@ -369,7 +369,7 @@
     height: 100%;
     box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
   }
-  
+   
   .channel-list__sidebar {
     width: 72px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
