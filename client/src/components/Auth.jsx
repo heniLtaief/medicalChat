@@ -12,7 +12,7 @@ const Auth = () => {
     const switchMode = ()=>{
         setIsSignup((prevIsSignup)=> !prevIsSignup)
     }
-    
+
     return (
         <div className='auth__form-container'>
             <div className='auth__form-container_fields'>
@@ -97,6 +97,9 @@ const Auth = () => {
                         </p>                              
                     </div>
                 </div>
+            </div>
+            <div className='auth__form-container_image'>
+                <img src={signinImage}/>
             </div>
         </div>
     )
