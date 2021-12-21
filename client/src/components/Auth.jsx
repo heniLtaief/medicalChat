@@ -3,10 +3,23 @@ import Cookies from 'universal-cookie';
 import axios from "axios";
 import signinImage from "../assets/signup.jpg";
 
+const initialState={
+    fullName: "",
+    username: "",
+    password: "",
+    confirmPassword: "",
+    phoneNumber: "",
+    avaterURL: ""
+}
+
 const Auth = () => {
     const [isSignup,setIsSignup] = useState(true);
+    const [form, setForm]= useState(initialState);
 
-    const handleChange = ()=> {}
+    const handleChange = (e)=> {
+        setForm({...[form], [e.target.name]: e.target.value})
+        console.log(form)
+    }
 
 // the right whay in react to swtich between signIn & signUp forms
     const switchMode = ()=>{
