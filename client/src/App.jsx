@@ -15,7 +15,14 @@ const authToken = cookies.get("token")
 const client = StreamChat.getInstance(apiKey);
 
 if (authToken){
-    client.connectUser();
+    client.connectUser({
+        id:cookies.get('userId'),
+        name:cookies.get('username'),
+        fullName:cookies.get('fullName'),
+        image:cookies.get('avatarURL'),
+        hashedPassword:cookies.get('hashedPassword'),
+        phoneNumber:cookies.get('phoneNumber')
+    });
 }
 const App = () => {
     if (!authToken) return <Auth/>
