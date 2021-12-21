@@ -21,6 +21,8 @@ const Auth = () => {
         console.log(form)
     }
 
+    const handle
+
 // the right whay in react to swtich between signIn & signUp forms
     const switchMode = ()=>{
         setIsSignup((prevIsSignup)=> !prevIsSignup)
@@ -100,6 +102,9 @@ const Auth = () => {
                                 />
                                 </div>
                             )}
+                            <div className='auth__form-container_fields-content_button'>
+                                <button>{isSignup ? "SIgn Up" : "Sign In"}</button>
+                            </div>
                     </form>
                     <div className='auth__form-container_fields-account'>
                         <p>
