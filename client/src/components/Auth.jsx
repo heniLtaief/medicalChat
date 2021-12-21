@@ -18,10 +18,12 @@ const Auth = () => {
 
     const handleChange = (e)=> {
         setForm({...[form], [e.target.name]: e.target.value})
-        console.log(form)
     }
 
-    const handle
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        console.log(form)
+    }
 
 // the right whay in react to swtich between signIn & signUp forms
     const switchMode = ()=>{
@@ -33,7 +35,7 @@ const Auth = () => {
             <div className='auth__form-container_fields'>
                 <div className='auth__form-container_fields-content'>
                     <p>{isSignup ? "Sign Up" : "Sign In"}</p>
-                    <form onSubmit={()=>{}}>
+                    <form onSubmit={handleSubmit}>
                         {isSignup && (
                             <div className='auth__form-container_fields-content_input'>
                                 <label htmlFor='fullName'>Full Name</label>
