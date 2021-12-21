@@ -22,7 +22,7 @@ if (authToken){
         image:cookies.get('avatarURL'),
         hashedPassword:cookies.get('hashedPassword'),
         phoneNumber:cookies.get('phoneNumber')
-    });
+    },authToken);
 }
 const App = () => {
     if (!authToken) return <Auth/>
